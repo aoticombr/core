@@ -9,8 +9,10 @@ import { Template } from 'devextreme-react/core/template';
 import { useMenuPatch } from 'core/front/utils/patches';
 import { ButtonTypes } from 'devextreme-react/button';
 import { TreeViewTypes } from 'devextreme-react/tree-view';
-import type { SideNavToolbarProps } from 'core/front/types';
 
+export interface SideNavToolbarProps {
+    title: string;
+}
 export default function SideNavOuterToolbar({ title, children }: React.PropsWithChildren<SideNavToolbarProps>) {
   const scrollViewRef = useRef<ScrollView>(null);
   const navigate = useNavigate();
