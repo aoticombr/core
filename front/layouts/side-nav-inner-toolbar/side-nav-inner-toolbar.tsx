@@ -10,8 +10,8 @@ import { useScreenSize } from 'core/front/utils/media-query';
 import { Template } from 'devextreme-react/core/template';
 import { useMenuPatch } from 'core/front/utils/patches';
 import { TreeViewTypes } from 'devextreme-react/tree-view';
-import type { SideNavToolbarProps } from 'core/front/types';
 import { ButtonTypes } from 'devextreme-react/button';
+import type { SideNavToolbarProps } from '../types';
 
 export default function SideNavInnerToolbar({ title, children }: React.PropsWithChildren<SideNavToolbarProps>) {
   const scrollViewRef = useRef<ScrollView>(null);
