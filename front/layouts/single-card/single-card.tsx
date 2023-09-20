@@ -1,11 +1,8 @@
 import React from 'react';
 import ScrollView from 'devextreme-react/scroll-view';
 import './single-card.scss';
+import type { SideNavToolbarProps } from '../types';
 
-export interface SingleCardProps {
-    title?: string;
-    description?: string;
-}
 export default function SingleCard({ title, description, children }: React.PropsWithChildren<SingleCardProps>) {
   return (
     <ScrollView height={'100%'} width={'100%'} className={'with-footer single-card'}>
